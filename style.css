@@ -1490,7 +1490,9 @@ td {
 
 @media (min-width: 1440px) {
   .body .body__mobileMenu--request {
-    padding-top: 0; } }
+    padding-top: 0; }
+    .body .body__mobileMenu--request .header__back--request {
+      display: block; } }
 
 @media (min-width: 320px) and (max-width: 767px) {
   .body .body__mobileMenu--request {
