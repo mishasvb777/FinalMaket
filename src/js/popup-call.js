@@ -5,7 +5,7 @@ let overlay = document.querySelector('.overlay');
 let mobileMenu = document.querySelector('.body__mobileMenu');
 let popupCall = document.querySelector('.body__mobileMenu--request'); 
 let orderCall = document.querySelector('.order-call');
-
+let body = document.querySelector('.body');
 
 
 for (let i = 0; i < btnOrderCall.length; i++){
@@ -13,6 +13,7 @@ for (let i = 0; i < btnOrderCall.length; i++){
     popupCall.classList.toggle('open-popup');
     mobileMenu.classList.remove('body__mobileMenu-open');
     overlay.style.display = 'block';
+    body.style.overflow = 'hidden';
   })  
 }
 
@@ -21,6 +22,7 @@ for (let i = 0; i < btnOpenCall.length; i++){
     orderCall.classList.toggle('open-popup');  
     mobileMenu.classList.remove('body__mobileMenu-open');  
     overlay.style.display = 'block';
+    body.style.overflow = 'hidden';
   })  
 }
 
@@ -29,6 +31,7 @@ for (let i = 0; i < btnCloseCall.length; i++){
     popupCall.classList.remove('open-popup');
     orderCall.classList.remove('open-popup');
     overlay.style.display = 'none';
+    body.style.overflow = 'scroll';
   })
 }
 
@@ -36,5 +39,6 @@ overlay.addEventListener('click', function(){
   popupCall.classList.remove('open-popup');
   orderCall.classList.remove('open-popup');
   overlay.style.display = 'none';
+  body.style.overflow = 'scroll';
 })
 
