@@ -291,7 +291,7 @@ legend {
     left: 0px;
     position: relative;
     box-shadow: none;
-    padding-top: 0; }
+    padding-top: 16px; }
   .header__back {
     display: none; } }
 
@@ -1442,7 +1442,7 @@ td {
   display: flex;
   flex-direction: column;
   width: 440px;
-  height: 100vh;
+  min-height: 100vh;
   position: absolute;
   right: -10px;
   visibility: hidden;
