@@ -1,0 +1,32 @@
+.comercial-block{
+   margin-top: 10px; 
+   .comercial-text{
+    font-size: 14px;
+    line-height: 20px; 
+    letter-spacing: 0.2px;
+    color: #1B1C21;
+    margin-bottom: 20px;
+  }
+  .comercial-link{
+    display: block;
+    font-size: 16px;
+    line-height: 24px;  
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+    position: relative;
+    &::after{
+      content: "";
+      width: 10px;
+      height: 10px;
+      border-top: 2px solid #FF3E79;
+      border-right: 2px solid #FF3E79;
+      transform: rotate(45deg);
+      position: relative;
+      right: -10px;
+      display: inline-block;
+    }
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}

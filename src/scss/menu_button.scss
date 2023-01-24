@@ -1,0 +1,15 @@
+.menu{   
+  background-image: url(../img/burger.svg);  
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header__menu{
+  margin-right: 42px;
+  .header__menu::after{
+    content: "";
+    right: -22px;
+    top: 5px;
+  }
+}
+

@@ -1,0 +1,35 @@
+.nav{
+  overflow-y: hidden;
+  scrollbar-width: none;
+  ::-webkit-scrollbar { /* webkit */
+    width: 0;   
+    height: 0;
+  } /* firefox */
+  .nav__list{
+    display: flex; 
+    .nav__item{
+      display: inline-block;
+      .nav__link{
+        font-family: "TTLakes-Medium", Arial, serif;
+        padding: 6px 22px;
+        font-size: 19px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        color: #7E7E82;
+        border: 2px solid rgba(0, 0, 0, 0.0); 
+        white-space: nowrap; 
+        display: inline-block;
+      } 
+      .nav__link:hover,
+      .nav__link:focus{
+        border: 2px solid #B8FFEC;
+        border-radius: 6px;
+        background-color: #ffffff;
+      }     
+    }   
+  }
+}
+
+.main__nav{
+  margin: 25px 0;
+}

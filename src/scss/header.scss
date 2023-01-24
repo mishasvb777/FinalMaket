@@ -1,0 +1,20 @@
+.header{
+  display: flex;
+  justify-content: space-between;    
+  align-items: center;
+  margin-bottom: 19px;
+  .header__menu{
+    margin-right: 20px;
+    position: relative;
+  } 
+  .header__logo{
+    flex-grow: 1;
+  }  
+}
+
+@media (min-width: 1440px){
+  .header,
+  .header::after{
+    display: none;
+  } 
+}

@@ -1,0 +1,35 @@
+.slider-price{
+  height: 210px;
+}
+
+.slider-brands__wrapper .slider-price__item{
+  padding: 16px 0 0 16px;
+  height: 180px;
+}
+
+
+.slider-price__item{
+  position: relative;
+  p{
+    margin-bottom: 10px;
+  }
+  .price-title{
+    font-size: 14px;
+    line-height: 16px;
+    color: #7E7E82;
+    mix-blend-mode: normal;
+    opacity: 0.72;
+  }
+  .price-text{
+    font-size: 14px;
+    line-height: 18px;  
+    letter-spacing: 0.2px;
+    color: #1B1C21;
+  }  
+}
+  
+@media (min-width: 768px){
+  .slider-price-main{
+    display: none;
+  }
+}

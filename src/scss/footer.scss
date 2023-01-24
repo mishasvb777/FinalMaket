@@ -1,0 +1,27 @@
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;  
+  margin-top: 30px;
+  p{
+    margin-bottom: 16px;
+    width: 33.3%;
+  }  
+  .info-text{
+    text-align: right;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767.98px){
+  .footer{
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;    
+    p{
+      width: 100%;
+    }
+    .info-text{
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.description {
+  display: flex;
+  justify-content: space-between;
+  .description__image{
+    flex-basis: 50%;
+  }
+  &__text{
+    flex-basis: 50%;
+    padding-right: 45px;
+    margin-bottom: 24px;
+  }
+  &__link{
+    border: 2px solid rgba(0, 0, 0, 0.0);
+    position: relative;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+    padding-left: 16px;
+    &:hover,
+    &:focus{
+      border: 2px solid #B8FFEC;
+      border-radius: 6px; 
+    }
+    &:before{
+      content: "";
+      height: 11px;
+      width: 8px; 
+      left: 0;   
+      top: 6px;
+      position: absolute;
+      background-image: url(../img/arrow.svg);  
+    }
+  } 
+  &__p{
+    max-height: 90px;
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.4px;
+    color: #1B1C21;
+  } 
+}
+
+
+

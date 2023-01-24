@@ -1,0 +1,41 @@
+.title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .title__request{
+    display: none;
+  }
+}
+
+.title__text{
+  font-family: "TTLakes-Bold", Arial, sans-serif;
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: -0.6px;
+  color: #1B1C21;
+  position: relative;
+  padding-left: 10px;
+  &::before{
+    content:"";
+    position: absolute;
+    width: 4px;
+    height: 40px;
+    background-color: #41F6D7;
+    border-radius: 0px 20px 20px 0px;
+    left: 0px;
+  }        
+}
+
+@media (min-width: 1440px){
+  .title{
+    .title__request{
+      display: block;
+      &::before{        
+        content: none;         
+      }
+    }
+    .title__text {
+      padding-top: 0;
+    }
+  }  
+}

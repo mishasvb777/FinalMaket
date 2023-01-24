@@ -1,0 +1,30 @@
+.slider-repair{
+  transition: height 0.3s; 
+  .slider-brands__item{
+    height: 160px;
+    margin-bottom: 0px;
+    a{
+      padding-top: 16px;
+      padding-left: 16px;
+      font-size: 16px;
+      line-height: 24px;  
+      letter-spacing: -0.2px;
+      color: #1B1C21;
+    }
+    a::before{
+      top: 116px;
+    } 
+    a::after{
+      top: 100px;
+    }      
+  }
+  .swiper-pagination--repair{
+    bottom: 0px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px){
+  .slider-repair{
+    height: 180px;
+  }
+}

@@ -1,0 +1,37 @@
+.request{
+  .request__list{
+    display: flex;
+    justify-content: space-between;
+    .request__repair{      
+      background-image: url(../img/repair.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+    }    
+    .request__status{      
+      background-image: url(../img/checkstatus.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+  .request__repair{
+    margin-right: 16px;
+  }
+  .request::before{
+    top: 25px;
+  }
+  .request__item{
+    display: flex;
+  }
+  .request__span{
+    font-family: "TTLakes-Light", Arial, serif; 
+    font-size: 16px;
+    line-height: 40px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+    margin-right: 8px;       
+  }
+}
+
+@media (min-width: 768px) {
+  
+}

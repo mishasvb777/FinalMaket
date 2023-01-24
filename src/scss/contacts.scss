@@ -1,0 +1,34 @@
+.contacts{
+  .contacts__list{
+    display: flex;
+    margin-right: 42px;
+    .contacts__call{      
+      background-image: url(../img/call.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .contacts__chat{      
+      background-image: url(../img/chat.svg);      
+      background-repeat: no-repeat;
+      background-position: center;
+    }    
+    .contacts__profile{      
+      background-image: url(../img/profile.svg);
+      background-repeat: no-repeat;
+      background-position: center;      
+    }
+
+    .contacts__item{
+      margin-right: 16px;
+    }
+    .contacts__item:last-child{
+      margin-right: 0px;
+    }
+  }   
+}
+
+@media (max-width: 768px){
+  .header__contacts{
+    display: none;
+  }
+}

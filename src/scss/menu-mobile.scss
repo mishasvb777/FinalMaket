@@ -1,0 +1,31 @@
+.menuMobile__link{
+  display: inline-block;
+  font-family: TTLakes-Medium, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #1B1C21;
+  position: relative;
+  margin-bottom: 32px;
+  &:hover,
+  &:focus{
+    color: #7E7E82;   
+    transition-property: all;
+    transition-duration: 1s; 
+  }
+  &:hover::before, 
+  &:focus::before{
+  transition-duration: .1s; 
+  content:"";
+  position: absolute;
+  width: 4px;
+  height: 32px;
+  background-color: #41F6D7;
+  border-radius: 0px 20px 20px 0px;
+  left: -24px;
+  top: -4px;  
+}
+}
+
+
+
