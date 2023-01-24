@@ -1,7 +1,7 @@
 .description {
   display: flex;
   justify-content: space-between;
-  position: relative;
+  position: relative;  
   margin-bottom: 20px;
   .description__image{
     flex-basis: 50%;
@@ -47,7 +47,7 @@
 .description::before{
   content: "";
   height: 1px;
-  width: 100vw;
+  width: 100%;
   position: absolute;
   background-color: #D9FFF5;
   bottom: -20px;
