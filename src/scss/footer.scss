@@ -3,6 +3,8 @@
   flex-direction: row;
   justify-content: space-between;  
   margin-top: 30px;
+  padding: 16px 24px 0 24px;
+  position: relative;
   p{
     margin-bottom: 16px;
     width: 33.3%;
@@ -10,6 +12,16 @@
   .info-text{
     text-align: right;
   }
+}
+
+.footer::after{
+  content: "";
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  background-color: #D9FFF5;
+  top: 0px;
+  left: 0px;
 }
 
 @media (min-width: 320px) and (max-width: 767.98px){

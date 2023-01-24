@@ -3,7 +3,19 @@
 .slider-brands{
   display: flex;
   flex-direction: column;
+  position: relative;
 }
+
+.slider-brands::before{
+  content: "";
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  background-color: #D9FFF5;
+  bottom: 0px;
+  left: 0px;
+}
+
 
 .swiper-title{
   font-family: "TTLakes-Light", Arial, serif; 
@@ -14,6 +26,8 @@
   text-transform: uppercase;
   color: #7E7E82;
   line-height: 55px;
+  margin-bottom: 20px;  
+  position: relative;  
 }
 
 .slider-brands__swiper-title{

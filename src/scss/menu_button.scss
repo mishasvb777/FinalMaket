@@ -6,10 +6,23 @@
 
 .header__menu{
   margin-right: 42px;
-  .header__menu::after{
-    content: "";
-    right: -22px;
-    top: 5px;
-  }
 }
 
+.header__menu::after{
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 32px;
+  top: 4px;
+  right: -20px;
+  background-color: #EAEAEA;
+}
+
+@media (max-width: 768px){
+  .header .header__menu{
+    margin-right: 0;
+  }
+  .header__menu::after{
+    content: none;
+  }  
+}

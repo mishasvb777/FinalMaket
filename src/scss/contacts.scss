@@ -1,4 +1,5 @@
 .contacts{
+  position: relative;
   .contacts__list{
     display: flex;
     margin-right: 42px;
@@ -26,6 +27,7 @@
     }
   }   
 }
+
 
 @media (max-width: 768px){
   .header__contacts{
