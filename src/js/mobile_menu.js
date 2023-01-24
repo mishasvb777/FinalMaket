@@ -4,8 +4,10 @@ let mobileMenu = document.querySelector('.body__mobileMenu');
 let overlay = document.querySelector('.overlay');
 let body = document.querySelector('.body');
 
+
+
 openMenu.addEventListener('click', function (){
-  mobileMenu.classList.add('body__mobileMenu-open');
+  mobileMenu.classList.add('body__mobileMenu-open');  
   overlay.style.display = 'block';
   body.style.overflow = 'hidden';
 });
